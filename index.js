@@ -43,11 +43,7 @@ const themeToggle = document.getElementById("theme"); // definimos el boton
 themeToggle.addEventListener("click",() => {         //hacemos que se cambie la clase del body por la de light y viceversa
  document.body.classList.toggle("light-theme");
 
- if (document.body.classList.contains("light-theme")) {
-    themeToggle.textContent = "☀️";
- } else {
-    themeToggle.textContent = "🌙";
- } 
+
 });
 
 

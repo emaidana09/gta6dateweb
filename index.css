@@ -54,6 +54,15 @@ body {
   font-family: "gotham";
   font-size: 2.5em;
   padding-left: 5%;
+  
+}
+#logo:hover{
+  color: rgb(255, 255, 255);
+  font-family: "gotham";
+  font-size: 2.5em;
+  padding-left: 5%;
+  filter: drop-shadow(0 0 2px white);
+  transition: 2ms;
 }
 
 .container {
@@ -73,18 +82,19 @@ body {
   background: transparent;
 }
 
-#theme {
+#theme{
   cursor: pointer;
   border: none;
-  border-radius: 999px;
   padding: 6px 14px;
-  background: #1a1a1a;
-  color: white;
+  background: transparent;
   font-size: 14px;
 }
 
 #link {
   text-decoration: none;
+}
+#theme:hover{
+  font-size: 18px;
 }
 body.light-theme {
   background:
@@ -110,10 +120,29 @@ body.light-theme #em_counter {
   color: black;
   filter: drop-shadow(0 0 10px #f5a9ff);
 }
-
 body.light-theme #em_counter:hover {
   color: black;
   filter: drop-shadow(0 0 10px #ff62d6);
+}
+#palmera{
+  display: flex;
+  width: 350px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+ filter: drop-shadow(0 0 5px) brightness(0) saturate(100%) invert(47%) sepia(84%) saturate(900%) hue-rotate(280deg);
+ 
+
+}
+#palmera2{
+  display: flex;
+  width: 350px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  filter: drop-shadow(0 0 5px) brightness(0) saturate(100%) invert(47%) sepia(84%) saturate(900%) hue-rotate(280deg);
+ 
+
 }
 #emalabel {
   font-family: "gotham";
@@ -121,7 +150,7 @@ body.light-theme #em_counter:hover {
   font-size: 10px;
   bottom: 10px;
   left: 90px;
-  color: rgb(71, 71, 71);
+  
 }
 @media (max-width: 768px){
 
@@ -157,4 +186,18 @@ body.light-theme #em_counter:hover {
     .container{
         padding-top: 20%;
     }
-}
+    #palmera1{
+      width: 100px;
+    }
+     #palmera2{
+      width: 250px
+    }
+  
+  
+    }
+    body.light-theme #logo:hover{
+      color: black;
+      filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+    }
+  
+
