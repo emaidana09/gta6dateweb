@@ -1,6 +1,7 @@
 
 
 //movimiento del gardiente
+/*
 const em_h1 = document.getElementById("em_h1"); // esto guarda el elemento en un a variable para poder modificarlo.
 
 let rosa = { r: 221, g: 109, b: 206 };
@@ -11,7 +12,7 @@ window.addEventListener("mousemove", (event) => {
     const y = event.clientY / window.innerHeight * 100; // poscicion del mouse en Y y de el Largo de la ventana
     em_h1.style.backgroundPosition = `${x}% ${y}%`
 
-}); // esto detecta el movimiento del mouse
+}); */  // esto detecta el movimiento del mouse
 
 //funcion de contador fecha
 function actualizarContador(){
@@ -35,4 +36,19 @@ console.log(diferencia)
 em_counter.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`
 }
 
-setInterval(actualizarContador, 1000);
+setInterval(actualizarContador, 1000); // ponemos un untervalo para que se actualice cada 1 segundo 1000ms
+
+const themeToggle = document.getElementById("theme"); // definimos el boton
+
+themeToggle.addEventListener("click",() => {         //hacemos que se cambie la clase del body por la de light y viceversa
+ document.body.classList.toggle("light-theme");
+
+ if (document.body.classList.contains("light-theme")) {
+    themeToggle.textContent = "☀️";
+ } else {
+    themeToggle.textContent = "🌙";
+ } 
+});
+
+
+//background: linear-gradient(180deg, rgb(178, 42, 206), rgb(226, 137, 137)); 
