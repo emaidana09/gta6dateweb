@@ -157,3 +157,52 @@ body.light-theme #em_counter:hover{
     transform: scale(1.05);
     transition: 0.2s;
 }
+#emalabel{
+  font-family: "gotham";
+  position: fixed;
+    font-size: 10px;
+    bottom: 10px;
+    left: 90px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+  color: rgb(71, 71, 71);
+  
+}
+@media (max-width: 768px){
+
+    #em_h1{
+        font-size: 2.8em;
+    }
+
+    #em_counter{
+        font-size: 1.8em;
+    }
+
+    #em_counter:hover{
+        font-size: 2.2em;
+    }
+
+    #logo{
+        font-size: 1.8em;
+        padding-left: 10px;
+    }
+
+    #theme{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    #header{
+        top: 5px;
+        right: 5px;
+        width: 95%;
+        padding: 5px 10px;
+    }
+
+    .container{
+        padding-top: 20%;
+    }
+}
