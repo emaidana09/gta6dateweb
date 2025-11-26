@@ -7,169 +7,121 @@
     src: url(/fonts/Pricedown\ Bl.otf);
 
 }
-body{
-display: flex;
-flex-direction: column;
-margin: 0;
-background-color: black;
-min-height: 100vh;
-background:
-    radial-gradient(
-      circle at 50% -10%,
-      rgba(110, 70, 180, 0.15),
-      rgba(247, 244, 244, 0) 60%
-    ),
-    radial-gradient(
-      circle at 50% 115%,
-      rgba(207, 205, 206, 0.12),
-      rgba(255, 255, 255, 0) 65%
-    ),
-    linear-gradient(
-      180deg,
-      #0c0a11 0%,
-      #050407 40%,
-      #000000 70%,
-      #0c0a11 100%
-    );
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at 50% -10%, rgba(110, 70, 180, 0.15), rgba(247, 244, 244, 0) 60%),
+    radial-gradient(circle at 50% 115%, rgba(207, 205, 206, 0.12), rgba(255, 255, 255, 0) 65%),
+    linear-gradient(180deg, #0c0a11 0%, #050407 40%, #000 70%, #0c0a11 100%);
   background-attachment: fixed;
+}
 
+#em_h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: "gotham";
+  background: linear-gradient(180deg, rgb(178, 42, 206), rgb(226, 137, 137));
+  background-size: 300%;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 5px #a11ead);
 }
-body.light-theme{
-background-color: rgb(255, 255, 255);
-background:
-    radial-gradient(
-      circle at 50% -15%,
-      rgba(255, 180, 250, 0.22),
-      rgba(255, 255, 255, 0) 60%
-    ),
-    radial-gradient(
-      circle at 50% 125%,
-      rgba(200, 150, 255, 0.15),
-      rgba(255, 255, 255, 0) 60%
-    ),
-    linear-gradient(
-      180deg,
-      #faf4ff 0%,
-      #f3ecff 40%,
-      #ece6ff 70%
-    );
-}
-#em_h1{
- text-align: center;
- font-size: 5em;
- font-family: "gotham";
- background: linear-gradient(180deg, rgb(178, 42, 206), rgb(226, 137, 137)); 
- background-size: 300%;
- background-repeat: no-repeat;
- -webkit-background-clip: text;
- color: transparent;
- filter: drop-shadow(0 0 5px #a11ead);
- 
-}
-#em_counter{
- display: inline-block;
- text-decoration: none;
- text-align: center;
- font-size: 3em;
- font-family: "gotham";
- color: white;
- filter: drop-shadow(0 0 3px #ffffff);
 
+#em_counter {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 3em;
+  font-family: "gotham";
+  color: white;
+  filter: drop-shadow(0 0 3px #ffffff);
 }
-#logo{
-    color: white;
-    font-family: "gotham";
-    font-size: 2.5em;
-    padding-left: 5%;
 
+#em_counter:hover {
+  font-size: 4em;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px #ff62d6);
+  transform: scale(1.05);
+  transition: 0.2s;
 }
-body.light-theme #logo{
-    color: rgb(0, 0, 0);
-    font-family: "gotham";
-    font-size: 2.5em;
-    padding-left: 5%;
 
+#logo {
+  color: white;
+  font-family: "gotham";
+  font-size: 2.5em;
+  padding-left: 5%;
 }
-.container{
-    padding-top: 6%;
-    text-align: center;
+
+.container {
+  padding-top: 6%;
+  text-align: center;
 }
-#header{
-    position: fixed;
-    top: 10px;
-    right: 40px;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
-    background: transparent;
-   
+
+#header {
+  position: fixed;
+  top: 10px;
+  right: 40px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background: transparent;
 }
-#em_counter:hover{
-    font-size: 4em;
-    cursor: pointer;
-    color: #ffffff;
-    filter: drop-shadow(0 0 10px #ff62d6);
-    transform: scale(1.05);
-    transition: 0.2s;
+
+#theme {
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 14px;
 }
-#link{
-    text-decoration: none;
+
+#link {
+  text-decoration: none;
 }
-#theme{
-    cursor: pointer;
-    border: none;
-    border-radius: 999px;
-    padding: 6px 14px;
-    background: #1a1a1a;
-    color: white;
-    font-size: 14px;
+body.light-theme {
+  background:
+    radial-gradient(circle at 50% -15%, rgba(255, 180, 250, 0.22), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(circle at 50% 125%, rgba(200, 150, 255, 0.15), rgba(255, 255, 255, 0) 60%),
+    linear-gradient(180deg, #faf4ff 0%, #f3ecff 40%, #ece6ff 70%);
 }
-body.light-theme #em_h1{
- text-align: center;
- font-size: 5em;
- font-family: "gotham";
+
+body.light-theme #logo {
+  color: black;
+}
+
+body.light-theme #em_h1 {
  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(121, 75, 118)); 
  background-size: 300%;
  background-repeat: no-repeat;
  -webkit-background-clip: text;
  color: transparent;
  filter: drop-shadow(0 0 5px #a11ead);
- 
 }
-body.light-theme #em_counter{
- display: inline-block;
- text-decoration: none;
- text-align: center;
- font-size: 3em;
- font-family: "gotham";
- color: #000000;
- filter: drop-shadow(0 0 10px #f5a9ff);
 
+body.light-theme #em_counter {
+  color: black;
+  filter: drop-shadow(0 0 10px #f5a9ff);
 }
-body.light-theme #em_counter:hover{
-    display: inline-block;
-    font-size: 4em;
-    cursor: pointer;
-    color: #000000;
-    filter: drop-shadow(0 0 10px #ff62d6);
-    transform: scale(1.05);
-    transition: 0.2s;
+
+body.light-theme #em_counter:hover {
+  color: black;
+  filter: drop-shadow(0 0 10px #ff62d6);
 }
-#emalabel{
+#emalabel {
   font-family: "gotham";
   position: fixed;
-    font-size: 10px;
-    bottom: 10px;
-    left: 90px;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
+  font-size: 10px;
+  bottom: 10px;
+  left: 90px;
   color: rgb(71, 71, 71);
-  
 }
 @media (max-width: 768px){
 
