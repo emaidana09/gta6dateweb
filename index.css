@@ -274,7 +274,17 @@ body.light-theme #em_counter:hover {
      #palmera2{
       width: 250px
     }
-  
+    .menuitem{
+      font-size: 15px;
+    }
+    #panel1{
+      width: 100%;
+
+    }
+    #imagenrockstar{
+      width: 460px;
+    }
+   
   
     }
     body.light-theme #logo:hover{
