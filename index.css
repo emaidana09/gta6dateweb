@@ -54,6 +54,7 @@ body {
   font-family: "gotham";
   font-size: 2.5em;
   padding-left: 5%;
+  font-weight: bold;
   
 }
 #logo:hover{
@@ -95,6 +96,87 @@ body {
 }
 #theme:hover{
   font-size: 18px;
+}
+.barra{
+  display: block;
+  height: 7px;
+  width: 30px;;
+  background-color: #7a7a7a;
+  margin: 5px 5px;
+  transition: transform .3s ease, opacity .3s ease;
+  border: 1px solid rgb(119, 119, 119);
+}
+#menu{
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  width: 40px;     
+  height: 40px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+  background: none;
+  border-radius: 10000px;
+  border: none;
+  text-align: center;
+}
+#menu:hover{
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 10000px;
+  cursor: pointer;
+}
+#menu.active .barra:first-child{
+  transform: rotate(45deg) 
+}
+#menu.active .barra:last-child{
+  transform: rotate(-45deg) 
+}
+#menu.active .barra{
+  margin:  0;
+  height: 2px;
+  width: 20px;
+  height: 100hv;
+  width: 100%;
+  color: #a11ead;
+  align-items: center;
+}
+.barra{
+  margin: 4px 0;
+}
+#menu.active .barra{
+  margin: -2px 0;
+}
+#panel1{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh; 
+  z-index: 109;           
+  transition: transform .3s ease;
+  background: rgba(0, 0, 0, 0.938);
+  backdrop-filter: blur(10px);
+  transform: translateX(100%);
+}
+#panel1.active{
+  transform: translateX(0%);
+
+}
+.menuitem{
+  font-family: "gotham";
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 30px;
+  margin-top: 25px;
+  
+}
+.panel.active .menuitem{
+    opacity: 1;
+    transform: translateY(0);
 }
 body.light-theme {
   background:

@@ -47,4 +47,13 @@ themeToggle.addEventListener("click",() => {         //hacemos que se cambie la 
 });
 
 
+const menuToggle = document.getElementById("menu");
+const panel1 = document.getElementById("panel1");
+
+menuToggle.addEventListener("click",() =>{
+    menuToggle.classList.toggle("active");
+    panel1.classList.toggle("active");
+})
+
+
 //background: linear-gradient(180deg, rgb(178, 42, 206), rgb(226, 137, 137)); 
